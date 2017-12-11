@@ -1,0 +1,22 @@
+﻿body {
+    background-color: dimgray;
+    color: whitesmoke;
+    font-family: Amaranth;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 200%;
+}
+
+a {
+    width: 16%;
+    display: inline-block;
+}
+
+a:link {
+    color: white;
+   
+}
