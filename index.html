@@ -6,24 +6,35 @@
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <link rel="stylesheet" href="main.css" />
   <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Amaranth">
-
+	<script type="text/javascript" src="scripts/slideshow.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 	<header>
 		<h1>Leicester</h1>			
-			<nav>
-			<a href="index.html">Home</a>
-			<a href="tourism.html">See and Do</a>
-      <a href="hospitality.html">Eat and Drink</a>
-			<a href="whatson.html">What's On</a>
-      <a href="leicestershire.html">The County</a>
-      <a href="history.html">History</a>
+			<nav class="MainNav" id="NavBar">
+			<a href="index.html" id="a1">Home</a>
+			<a href="tourism.html" id="a2">See and Do</a>
+      <a href="hospitality.html" id="a3">Eat and Drink</a>
+			<a href="whatson.html" id="a4">What's On</a>
+      <a href="leicestershire.html" id="a5">The County</a>
+      <a href="history.html" id="a6">History</a>
     </nav>
   </header>
+
+	<div id="slideshow">
+		<img class="mySlides" src="images/slide1.jpg">
+		<img class="mySlides" src="images/slide2.jpg"> 
+		<img class="mySlides" src="images/slide3.jpg"> 
+		<img class="mySlides" src="images/slide4.jpg"> 
+		<img class="mySlides" src="images/slide5.jpg" style="width:50%;">
+	</div>
+	<a class="imagenav" onclick="plusDivs(-1)">&#10094;</a>
+	<a class="imagenav" onclick="plusDivs(+1)">&#10095;</a>
+	
+	
   <section id="sect1">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Ipsum nunc aliquet bibendum enim facilisis. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Nam libero justo laoreet sit amet cursus sit. Elementum tempus egestas sed sed risus pretium quam. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Tincidunt id aliquet risus feugiat in ante. Consequat semper viverra nam libero justo laoreet sit. Urna nec tincidunt praesent semper. Mus mauris vitae ultricies leo.
-    </p>
+		<p>The Clock Tower</p>
   </section>
 		
   <section id="sect2">
@@ -34,5 +45,28 @@
   <footer>
 
   </footer>
+	<script>
+		var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+</script>
 
 </body>
