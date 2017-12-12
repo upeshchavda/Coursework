@@ -21,18 +21,14 @@
       <a href="history.html" id="a6">History</a>
     </nav>
   </header>
-
-	<div id="slideshow">
+  <section id="slideshow">
 		<img class="mySlides" src="images/slide1.jpg">
 		<img class="mySlides" src="images/slide2.jpg"> 
 		<img class="mySlides" src="images/slide3.jpg"> 
 		<img class="mySlides" src="images/slide4.jpg"> 
-		<img class="mySlides" src="images/slide5.jpg" style="width:50%;">
-	</div>
-	<a class="imagenav" onclick="plusDivs(-1)">&#10094;</a>
-	<a class="imagenav" onclick="plusDivs(+1)">&#10095;</a>
-	
-	
+		<img class="mySlides" src="images/slide5.jpg">
+  </section>
+ 
   <section id="sect1">
 		<p>The Clock Tower</p>
   </section>
@@ -46,27 +42,21 @@
 
   </footer>
 	<script>
-		var slideIndex = 1;
-			showDivs(slideIndex);
+		var myIndex = 0;
+    activeSlideshow();
 
-			function plusDivs(n) {
-				showDivs(slideIndex += n);
-			}
-
-			function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName("mySlides");
-				if (n > x.length) {
-					slideIndex = 1
-				}
-				if (n < 1) {
-					slideIndex = x.length
-				}
-				for ( i = 0; i < x.length; i++) {
-					x[i].style.display = "none";
-				}
-				x[slideIndex - 1].style.display = "block";
-			}
+    function activeSlideshow() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(activeSlideshow, 2000); // Change image every 2 seconds
+      x[myIndex].style.opacity = 1;
+    }
 </script>
 
 </body>
