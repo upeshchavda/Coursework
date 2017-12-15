@@ -21,8 +21,12 @@ nav#NavBar /*ID(NavBar) from nav will have all formatting from these parentheses
 	margin-bottom: 10px;
 	}
 
+.generalnav {
+  text-decoration: none;
+  color: inherit;
+}
+
 a.navs /*Class(navs) from a will have all formatting from these parentheses*/ { 
-	color: #f9f9f9;
 	display: block;
 	padding: 0.8rem 1rem;
 	text-decoration: none;
@@ -32,7 +36,7 @@ a.navs:hover /*Class(navs) from a will have all formatting from these parenthese
 	background-color: #0471A6; /*changes background colour*/
 }
 
-img /*img will have all formatting from these parentheses*/ {
+img.slideshow /*img will have all formatting from these parentheses*/ {
 	text-align:center;
   width:100%;
   display:block;
@@ -40,6 +44,9 @@ img /*img will have all formatting from these parentheses*/ {
   transition: 1s;
 }
 
+.hide /*Class(hideMobile) will have all formatting from these parentheses*/ {
+	display:none;
+}
 
 /*the .hideMobile will hide any tags that use this class whilst viewed before the media query*/
 .hideMobile /*Class(hideMobile) will have all formatting from these parentheses*/ {
@@ -48,8 +55,10 @@ img /*img will have all formatting from these parentheses*/ {
 
 .tile /*Class(tile) will have all formatting from these parentheses*/ {
 	text-align: center;
-	border: 2px solid #A9BCD0;
 	border-radius: 25px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2em
 }
 
 .p_tile/*Class(p_tile) will have all formatting from these parentheses*/{
@@ -57,11 +66,13 @@ img /*img will have all formatting from these parentheses*/ {
 	margin-bottom: 5px;
 }
 
-#tiles /*ID(tiles) will have all formatting from these parentheses*/{
+.tiles /*ID(tiles) will have all formatting from these parentheses*/{
 	margin-top: 20px;
+  text-align: center;
+  padding-top: 10px
 }
 
-#tiles:hover /*ID(tiles) ill have all formatting from these parentheses when HOVERING*/{
+.tiles:hover /*ID(tiles) ill have all formatting from these parentheses when HOVERING*/{
 		background-color: #56627f; /*changes background colour*/
 }
 
@@ -75,7 +86,7 @@ a.booking /*Class(booking) from a will have all formatting from these parenthese
 }
 
 a.booking:hover {
-  background-color: royalblue;
+  border: 3px solid #56627F;
 }
 
 .textCentre {
@@ -86,6 +97,16 @@ a.booking:hover {
   font-size: calc(10px + 0.9vw);
 }
 
+#subheader {
+  font-size: calc(22px + 1.2vw);
+}
+ 
+#sitemap:hover {
+  background-color: #56627F;
+}
+.image_tile {
+  width: 90%;
+}
 /*Media Query: All code within the media tag will work on devices with a width of 700px or more*/
 @media only screen and (min-width:700px) {
 	nav#NavBar /*ID(NavBar) from nav will have all formatting from these parentheses*/ {
