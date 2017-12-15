@@ -1,53 +1,72 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
   <title>Leicester City</title>
-	<meta charset="utf-8" />
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="main.css" />
   <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Amaranth%7CCourgette%7CMonoton">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
+
 <body>
-	<header>
-		<h1>Leicester</h1>			
-			<nav class="MainNav" id="NavBar">
-			<a href="index.html" class="navs">Home</a>
-			<a href="tourism.html" class="navs">See and Do</a>
-      <a href="hospitality.html" class="navs">Eat and Drink</a>
-			<a href="whatson.html" class="navs">What's On</a>
-      <a href="leicestershire.html" class="navs">The County</a>
-      <a href="history.html" class="navs">History</a>
+  <header>
+    <h1>Leicester</h1>
+    <nav class="MainNav" id="NavBar">
+      <a href="index.html" class="navs generalnav">Home</a>
+      <a href="tourism.html" class="navs generalnav">See and Do</a>
+      <a href="hospitality.html" class="navs generalnav">Eat and Drink</a>
+      <a href="whatson.html" class="navs generalnav">What's On</a>
+      <a href="leicestershire.html" class="navs generalnav">The County</a>
+      <a href="history.html" class="navs generalnav">History</a>
     </nav>
   </header>
-  
+
   <section id="container">
+    <h2 class="hide">Slideshow</h2>
     <section class="myslides">
-      <img src="images/slide1.jpg" alt="Birds Eye View">
+      <h2 class="hide">Slideshow</h2>
+      <img class="slideshow" src="images/slide1.jpg" alt="Birds Eye View">
     </section>
     <section class="myslides">
-      <img src="images/slide2.jpg" alt="Fenwick">
+      <h2 class="hide">Slideshow</h2>
+      <img class="slideshow" src="images/slide2.jpg" alt="Fenwick">
     </section>
     <section class="myslides">
-      <img src="images/slide3.jpg" alt="The Clock Tower">
+      <h2 class="hide">Slideshow</h2>
+      <img class="slideshow" src="images/slide3.jpg" alt="The Clock Tower">
     </section>
     <section class="myslides">
-      <img src="images/slide4.jpg" alt="The High-Street">
+      <h2 class="hide">Slideshow</h2>
+      <img class="slideshow" src="images/slide4.jpg" alt="The High-Street">
     </section>
     <section class="myslides">
-      <img src="images/slide5.jpg" alt="Leiecester Market Concept">
+      <h2 class="hide">Slideshow</h2>
+      <img class="slideshow" src="images/slide5.jpg" alt="Leiecester Market Concept">
     </section>
   </section>
-  	
-	<section id="tiles">
-		<a class="tile" href="whatson.html#jubileesquare">
-			<img src="images/jubsqicerink.jpg" alt="Ice Rink">
-			<p class="p_tile">Jubilee Square Ice Rink</p>
-		</a>
 
-	</section>
-	
-  <footer>
-    
+  <section>
+    <h2 class="hide">Tiles</h2>
+    <section class="tiles textCentre">
+      <h2 class="hide">Tile</h2>
+      <a class="tile" href="whatson.html#jubileesquare">
+			<img class="image_tile" alt="Leicester Ice Rink" src="images/jubsqicerink.jpg" alt="Ice Rink">
+			<p  class="generalnav p_tile">Jubilee Square Ice Rink</p>
+		</a>
+    </section>
+    <section class="tiles textCentre">
+      <h2 class="hide">Tile</h2>
+      <a class="tile" href="whatson.html#jubileesquare">
+			<img class="image_tile" alt="Wheel of Light" src="images/jubsqwheel.jpg" alt="Ice Rink">
+			<p class="generalnav p_tile">Christmas Wheel of Light</p>
+		</a>
+    </section>
+  </section>
+
+  <footer class="textCentre">
+    <p>&copy; Upesh Chavda 2017</p>
+    <a id="sitemap" class="generalnav" href="sitemap.html">Sitemap</a>
   </footer>
-	<script src="scripts/slideshow.js"></script>
+  <script src="scripts/slideshow.js"></script>
 </body>
