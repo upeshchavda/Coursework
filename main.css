@@ -140,6 +140,19 @@ a.booking:hover {
   background-color: #56627F;
 }
 
+#sitemap {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.sitemaplink {
+	text-decoration: underline;
+	color: inherit;
+}
+.sitemaplink:hover {
+	background-color: #56627F;
+}
+
 .image_tile {
   width: 90%;
   flex-direction: column;
