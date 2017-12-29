@@ -25,6 +25,8 @@ As of 29/12/2017 23:05, the css pages fully validate through the <a href="https:
 
 In accordance with the assignment brief, the .js file shows no error in the console.
 
+In order to test the website, I asked people from different backgrounds what they thought of the prototype version. Many people said that the site was well designed and had a good layout, however some made some recommendations for me to change the colour schemes of the site. When asked "Do all the links work correctly", 100% of respondents said yes.
+
 ## Issues
 Throughout the development of the project, there were numerous errors that occured. One of the first errors was media queries not working as they should be. I later found out that it was due to my media screen size being max width, instead of min width. This led to the media query changing the page for the mobile view instead of the desktop view.
 
