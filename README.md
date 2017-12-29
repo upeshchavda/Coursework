@@ -13,4 +13,5 @@ The colour scheme is shown here:
 ![img](colourscheme.png)
 
 Details of my directory is as follows:
-![img](wireframes/Directory%20Layout.PNG)
+
+![img](wireframes/Navigation.png)
