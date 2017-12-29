@@ -6,6 +6,7 @@ The way I have designed my website is entirely through the Mobile First layout.
 
 Here I have a model of what my homepage will look like, simple and easy to use on a mobile phone.
 ![img](wireframes/Home.PNG)
+![img](wireframes/designplan.jpg)
 
 I have chosen a dark blue/white colour scheme as i feel these colours are more readable on a screen which has a dark background.
 
