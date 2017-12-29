@@ -34,3 +34,81 @@ Throughout the development of the project, there were numerous errors that occur
 To develop the website, I used two different HTML editors; <a href="https://notepad-plus-plus.org/">Notepad++</a> and <a href="http://brackets.io/">Brackets</a>, both of which I would recommend. The second editor is my favourite editor as it enables me to view a live demonstration of what code I have changed.
 
 In order to ensure the current versions were up to date, I used <a href="http://github.com>GitHub</a>, which is an opensource version control website to allow programmers to update their current projects.
+
+## Features
+### Sitemap
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+<url>
+  <loc>https://upeshchavda.github.io/</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/index.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/tourism.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/hospitality.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/whatson.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/leicestershire.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/history.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://upeshchavda.github.io/sitemap.html</loc>
+  <lastmod>2017-12-29T03:29:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>
+```
+### API
+The only API that I used in the site was from Google Fonts. Each page in the website uses the Google Fonts API, and this helped me to move away from the boring CSS fonts.
+
+### CSS 
+Media Query
+` @media only screen and (min-width:700px) ` 
+
+Animation
+` animation-name: colourchange;
+  animation-duration: 4s;
+  animation-iteration-count: 2; `
+  
+```
+@keyframes colourchange {
+  0%   {background-color:#373F51;}
+  12.5%  {background-color:#ff0000;}
+  25%  {background-color:#373F51;}
+  37.5%  {background-color:#ff7878;}
+  50% {background-color:#373F51;}
+  62.5%   {background-color:#74d680;}
+  75%  {background-color:#373F51;}
+  87.5%  {background-color:#378b29;}
+  100%  {background-color:#373F51;}
+} 
+```
+
+Transition 
+` transition: 1s; `
