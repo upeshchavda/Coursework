@@ -46,8 +46,9 @@ h1 /*h1 will have all formatting from these parentheses*/ {
   62.5%   {background-color:#74d680;}
   75%  {background-color:#373F51;}
   87.5%  {background-color:#378b29;}
-  100%%  {background-color:#373F51;}
+  100%  {background-color:#373F51;}
 }
+
 nav#NavBar /*ID(NavBar) from nav will have all formatting from these parentheses*/{
 	background-color: #444; /*changes background colour*/
 	display:flex;
