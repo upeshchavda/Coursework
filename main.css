@@ -4,6 +4,21 @@
 	background-color: #373F51; /*changes background colour*/
 }
 
+.floatright {
+  float: right;
+}
+
+.seedo {
+  width: 50%
+}
+
+#tilecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
 h1 /*h1 will have all formatting from these parentheses*/ {
 	text-align: center;
 	font-size: 55px;
@@ -48,6 +63,7 @@ img.slideshow /*img will have all formatting from these parentheses*/ {
 	display:none;
 }
 
+
 /*the .hideMobile will hide any tags that use this class whilst viewed before the media query*/
 .hideMobile /*Class(hideMobile) will have all formatting from these parentheses*/ {
 	display:none;
@@ -55,7 +71,6 @@ img.slideshow /*img will have all formatting from these parentheses*/ {
 
 .tile /*Class(tile) will have all formatting from these parentheses*/ {
 	text-align: center;
-	border-radius: 25px;
   color: inherit;
   text-decoration: none;
   font-size: 1.2em
@@ -69,7 +84,7 @@ img.slideshow /*img will have all formatting from these parentheses*/ {
 .tiles /*ID(tiles) will have all formatting from these parentheses*/{
 	margin-top: 20px;
   text-align: center;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .tiles:hover /*ID(tiles) ill have all formatting from these parentheses when HOVERING*/{
@@ -104,9 +119,13 @@ a.booking:hover {
 #sitemap:hover {
   background-color: #56627F;
 }
+
 .image_tile {
   width: 90%;
+  flex-direction: column;
 }
+
+
 /*Media Query: All code within the media tag will work on devices with a width of 700px or more*/
 @media only screen and (min-width:700px) {
 	nav#NavBar /*ID(NavBar) from nav will have all formatting from these parentheses*/ {
@@ -119,12 +138,26 @@ a.booking:hover {
 	
 	img /*img will have all formatting from these parentheses*/ {
 		text-align:center;
-		width:75%;
 		display:block;
 		margin:auto;
     transition: 1s;
     max-width: 1200px;
   }
+  
+  .tiles {
+    flex-direction: row;
+    width: 30%;
+    
+  }
+  
+  .tile {
+    justify-content: center
+  }
+  
+  img.slideshow {
+    width: 80%;
+  }
+  
   
   h1 /*h1 will have all formatting from these parentheses*/ {
     font-size: 5em;
