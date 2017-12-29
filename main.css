@@ -28,6 +28,25 @@ h1 /*h1 will have all formatting from these parentheses*/ {
 	margin-bottom: 0;
 }
 
+#booking {
+  background-color: #373F51;
+  animation-name: colourchange;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  padding: 10px 0;
+}
+
+@keyframes colourchange {
+  0%   {background-color:#373F51;}
+  12.5%  {background-color:#ff0000;}
+  25%  {background-color:#373F51;}
+  37.5%  {background-color:#ff7878;}
+  50% {background-color:#373F51;}
+  62.5%   {background-color:#74d680;}
+  75%  {background-color:#373F51;}
+  87.5%  {background-color:#378b29;}
+  100%%  {background-color:#373F51;}
+}
 nav#NavBar /*ID(NavBar) from nav will have all formatting from these parentheses*/{
 	background-color: #444; /*changes background colour*/
 	display:flex;
@@ -114,6 +133,7 @@ a.booking:hover {
 
 #subheader {
   font-size: calc(22px + 1.2vw);
+  margin: 0
 }
  
 #sitemap:hover {
@@ -125,6 +145,14 @@ a.booking:hover {
   flex-direction: column;
 }
 
+.paragraphs{
+  text-align: justify;
+  transition: 1s;
+}
+
+.smallmargin {
+  margin-bottom: 0
+}
 
 /*Media Query: All code within the media tag will work on devices with a width of 700px or more*/
 @media only screen and (min-width:700px) {
@@ -167,6 +195,13 @@ a.booking:hover {
 	.hideMobile {
 		display:inherit;
 	}
+  
+  .paragraphs {
+    text-align: justify;
+    width: 75%;
+    margin: 25px auto;
+    transition: 1s;
+  }
 	
   
 }
