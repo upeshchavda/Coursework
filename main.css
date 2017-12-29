@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
+	text-align: center;
 }
 
 h1 /*h1 will have all formatting from these parentheses*/ {
